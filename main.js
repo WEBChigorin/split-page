@@ -7,15 +7,15 @@ const container = document.querySelector('.container');
 // Ok, now I need to add some event lisrteners
 
 left.addEventListener('mouseenter', () => {
-  container.classlist.add('hover-left'); // that the class I wanna add
+  container.classList.add('hover-left'); // that the class I wanna add
 });
 left.addEventListener('mouseleave', () => {
-  container.classlist.remove('hover-left'); // don't forget to remove class after mouse goes away
+  container.classList.remove('hover-left'); // don't forget to remove class after mouse goes away
 });
 
 right.addEventListener('mouseenter', () => {
-  container.classlist.add('hover-right');
+  container.classList.add('hover-right');
 });
 right.addEventListener('mouseleave', () => {
-  container.classlist.remove('hover-right');
+  container.classList.remove('hover-right');
 });
